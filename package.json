@@ -1,13 +1,17 @@
 {
   "name": "slug-swap",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "convert string into a slug and vice versa",
+  "module": "dist/index.mjs",
   "keywords": [
     "slugify",
     "slug-to-string",
     "string-to-slug",
     "slug"
   ],
+  "exports": {
+    "import": "./dist/app.mjs"
+  },
   "homepage": "https://github.com/macklark/slug-swap#readme",
   "bugs": {
     "url": "https://github.com/macklark/slug-swap/issues"
@@ -19,8 +23,9 @@
   "license": "ISC",
   "author": "macklark",
   "type": "commonjs",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p dist && cp app.js dist/app.mjs"
   }
 }
