@@ -1,6 +1,6 @@
 {
   "name": "slug-swap",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "convert string into a slug and vice versa",
   "module": "dist/index.mjs",
   "keywords": [
